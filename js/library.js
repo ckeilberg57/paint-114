@@ -1,8 +1,8 @@
 var video;
-var bandwidth;
 var conference;
 var pin;
 
+var bandwidth;
 var rtc = null;
 
 /* ~~~ SETUP AND TEARDOWN ~~~ */
@@ -1963,7 +1963,7 @@ var reg = {
             document.getElementById("conference").value = incoming_data["conference_alias"];
             document.getElementById("worker").value = this.node;
             document.getElementById("pin").value = "";
-            initialise(this.node, incoming_data["conference_alias"], undefined, "medrm114", undefined, incoming_data["token"]);
+            initialise(this.node, incoming_data["conference_alias"], undefined, "Room 114", undefined, incoming_data["token"]);
 
           //  var confirm_string=window.confirm;
           //  window.confirm=function(){
