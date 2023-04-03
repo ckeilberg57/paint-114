@@ -1957,13 +1957,13 @@ var reg = {
    // },
 
    //Same info as previous section, but with an auto-confirm 
-    // incoming : function(event) {
-            // incoming_data = JSON.parse(event.data);
-            // console.log("incoming");
-            // document.getElementById("conference").value = incoming_data["conference_alias"];
-            // document.getElementById("worker").value = this.node;
-            // document.getElementById("pin").value = "";
-            // initialise(this.node, incoming_data["conference_alias"], undefined, "Room 114", undefined, incoming_data["token"]);
+     incoming : function(event) {
+             incoming_data = JSON.parse(event.data);
+             console.log("incoming");
+             document.getElementById("conference").value = incoming_data["conference_alias"];
+             document.getElementById("worker").value = this.node;
+             document.getElementById("pin").value = "";
+             initialise(this.node, incoming_data["conference_alias"], undefined, "Room 114", undefined, incoming_data["token"]);
 
           //  var confirm_string=window.confirm;
           //  window.confirm=function(){
